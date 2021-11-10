@@ -27,6 +27,10 @@ __PACKAGE__->add_columns(
 		'size' => 255,
 		'is_nullable' => 1,
 	},
+	'first_upload_at' => {
+		'data_type' => 'datetime',
+		'is_nullable' => 1,
+	},
 	'created_at' => {
 		'data_type' => 'datetime',
 		'default_value' => 'CURRENT_TIMESTAMP',
