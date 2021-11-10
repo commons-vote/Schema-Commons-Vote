@@ -39,7 +39,7 @@ __PACKAGE__->add_columns(
 __PACKAGE__->set_primary_key('section_id');
 __PACKAGE__->belongs_to('competition' => 'Schema::Commons::Vote::Result::Competition', 'competition_id');
 __PACKAGE__->belongs_to('user' => 'Schema::Commons::Vote::Result::User', 'created_by');
-__PACKAGE__->has_many('images' => 'Schema::Commons::Vote::Result::Image', 'section_id');
+__PACKAGE__->has_many('section_images' => 'Schema::Commons::Vote::Result::SectionImage', 'section_id');
 
 1;
 

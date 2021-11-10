@@ -15,6 +15,12 @@ __PACKAGE__->add_columns(
 	'email' => {
 		'data_type' => 'text',
 		'size' => 255,
+		'is_nullable' => 1,
+	},
+	'name' => {
+		'data_type' => 'text',
+		'size' => 255,
+		'is_nullable' => 1,
 	},
 	'wm_username' => {
 		'data_type' => 'text',

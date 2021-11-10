@@ -12,16 +12,12 @@ __PACKAGE__->add_columns(
 		'data_type' => 'integer',
 		'is_auto_increment' => 1,
 	},
-	'section_id' => {
-		'data_type' => 'integer',
-	},
 	'image' => {
 		'data_type' => 'text',
 		'size' => '255',
 	},
-	'wikimedia_username' => {
-		'data_type' => 'text',
-		'size' => 255,
+	'uploader_id' => {
+		'data_type' => 'integer',
 	},
 	'author' => {
 		'data_type' => 'text',
@@ -45,8 +41,9 @@ __PACKAGE__->add_columns(
 	},
 );
 __PACKAGE__->set_primary_key('image_id');
-__PACKAGE__->belongs_to('section' => 'Schema::Commons::Vote::Result::Section', 'section_id');
 __PACKAGE__->belongs_to('user' => 'Schema::Commons::Vote::Result::User', 'created_by');
+__PACKAGE__->belongs_to('uploader' => 'Schema::Commons::Vote::Result::User', 'uploader_id');
+__PACKAGE__->has_many('section' => 'Schema::Commons::Vote::Result::SectionImage', 'image_id');
 
 1;
 
