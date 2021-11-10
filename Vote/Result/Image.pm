@@ -33,6 +33,9 @@ __PACKAGE__->add_columns(
 		'size' => 1000,
 		'is_nullable' => 1,
 	},
+	'image_created' => {
+		'data_type' => 'datetime',
+	},
 	'created_by' => {
 		'data_type' => 'integer',
 	},
