@@ -12,11 +12,11 @@ __PACKAGE__->add_columns(
 		'data_type' => 'integer',
 		'size' => 40,
 	},
-	'session_data' => {
+	'data' => {
 		'data_type' => 'text',
 		'size' => 400,
 	},
-	'session_timestamp' => {
+	'timestamp' => {
 		'data_type' => 'datetime',
 		'default_value' => 'CURRENT_TIMESTAMP',
 	},
