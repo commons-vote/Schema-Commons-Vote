@@ -31,6 +31,8 @@ t/Schema-Commons-Vote-Result-Session/01-use.t
 t/Schema-Commons-Vote-Result-Session/02-version.t
 t/Schema-Commons-Vote-Result-User/01-use.t
 t/Schema-Commons-Vote-Result-User/02-version.t
+t/Schema-Commons-Vote-Result-UserLogin/01-use.t
+t/Schema-Commons-Vote-Result-UserLogin/02-version.t
 t/Schema-Commons-Vote-Result-Vote/01-use.t
 t/Schema-Commons-Vote-Result-Vote/02-version.t
 t/Schema-Commons-Vote/01-use.t
@@ -44,6 +46,7 @@ Vote/Result/SectionCategory.pm
 Vote/Result/SectionImage.pm
 Vote/Result/Session.pm
 Vote/Result/User.pm
+Vote/Result/UserLogin.pm
 Vote/Result/Vote.pm
 xt/Schema-Commons-Vote-Result-Competition/01-pod_coverage.t
 xt/Schema-Commons-Vote-Result-Competition/02-pod.t
@@ -61,6 +64,8 @@ xt/Schema-Commons-Vote-Result-Session/01-pod_coverage.t
 xt/Schema-Commons-Vote-Result-Session/02-pod.t
 xt/Schema-Commons-Vote-Result-User/01-pod_coverage.t
 xt/Schema-Commons-Vote-Result-User/02-pod.t
+xt/Schema-Commons-Vote-Result-UserLogin/01-pod_coverage.t
+xt/Schema-Commons-Vote-Result-UserLogin/02-pod.t
 xt/Schema-Commons-Vote-Result-Vote/01-pod_coverage.t
 xt/Schema-Commons-Vote-Result-Vote/02-pod.t
 xt/Schema-Commons-Vote/01-pod_coverage.t
