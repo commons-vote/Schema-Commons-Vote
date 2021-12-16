@@ -47,6 +47,9 @@ __PACKAGE__->add_columns(
 	},
 );
 __PACKAGE__->set_primary_key('image_id');
+__PACKAGE__->add_unique_constraint(
+	'image_unique_key' => ['image'],
+);
 __PACKAGE__->belongs_to('user' => 'Schema::Commons::Vote::Result::User', 'created_by');
 __PACKAGE__->belongs_to('uploader' => 'Schema::Commons::Vote::Result::User', 'uploader_id');
 __PACKAGE__->has_many('section' => 'Schema::Commons::Vote::Result::SectionImage', 'image_id');
