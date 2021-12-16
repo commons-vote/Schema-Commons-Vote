@@ -16,7 +16,7 @@ __PACKAGE__->add_columns(
 		'data_type' => 'text',
 		'size' => 400,
 	},
-	'created_at' => {
+	'session_timestamp' => {
 		'data_type' => 'datetime',
 		'default_value' => 'CURRENT_TIMESTAMP',
 	},
