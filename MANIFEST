@@ -17,6 +17,8 @@ META.yml
 README
 t/Schema-Commons-Vote-Result-Competition/01-use.t
 t/Schema-Commons-Vote-Result-Competition/02-version.t
+t/Schema-Commons-Vote-Result-HashType/01-use.t
+t/Schema-Commons-Vote-Result-HashType/02-version.t
 t/Schema-Commons-Vote-Result-Image/01-use.t
 t/Schema-Commons-Vote-Result-Image/02-version.t
 t/Schema-Commons-Vote-Result-Section/01-use.t
@@ -35,6 +37,7 @@ t/Schema-Commons-Vote/01-use.t
 t/Schema-Commons-Vote/02-version.t
 Vote.pm
 Vote/Result/Competition.pm
+Vote/Result/HashType.pm
 Vote/Result/Image.pm
 Vote/Result/Section.pm
 Vote/Result/SectionCategory.pm
@@ -44,6 +47,8 @@ Vote/Result/User.pm
 Vote/Result/Vote.pm
 xt/Schema-Commons-Vote-Result-Competition/01-pod_coverage.t
 xt/Schema-Commons-Vote-Result-Competition/02-pod.t
+xt/Schema-Commons-Vote-Result-HashType/01-pod_coverage.t
+xt/Schema-Commons-Vote-Result-HashType/02-pod.t
 xt/Schema-Commons-Vote-Result-Image/01-pod_coverage.t
 xt/Schema-Commons-Vote-Result-Image/02-pod.t
 xt/Schema-Commons-Vote-Result-Section/01-pod_coverage.t
