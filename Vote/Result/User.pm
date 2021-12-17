@@ -38,7 +38,7 @@ __PACKAGE__->add_columns(
 );
 __PACKAGE__->set_primary_key('user_id');
 __PACKAGE__->add_unique_constraint(
-	'wm_username_unique_key' => ['wm_username'],
+	'user_wm_username_unique_key' => ['wm_username'],
 );
 
 1;
