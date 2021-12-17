@@ -21,6 +21,9 @@ __PACKAGE__->add_columns(
 	},
 );
 __PACKAGE__->set_primary_key('hash_type_id');
+__PACKAGE__->add_unique_constraint(
+	'hash_type_name_unique_key' => ['name'],
+);
 
 1;
 
