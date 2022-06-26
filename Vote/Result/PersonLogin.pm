@@ -20,8 +20,7 @@ __PACKAGE__->add_columns(
 		'size' => 255,
 	},
 	'hash_type_id' => {
-		'data_type' => 'text',
-		'size' => 255,
+		'data_type' => 'integer',
 	},
 	'created_at' => {
 		'data_type' => 'datetime',
