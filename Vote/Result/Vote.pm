@@ -12,7 +12,7 @@ __PACKAGE__->add_columns(
 		'data_type' => 'integer',
 		'is_auto_increment' => 1,
 	},
-	'user_id' => {
+	'person_id' => {
 		'data_type' => 'integer',
 	},
 	'created_at' => {
@@ -20,9 +20,9 @@ __PACKAGE__->add_columns(
 		'default_value' => 'CURRENT_TIMESTAMP',
 	},
 );
-__PACKAGE__->set_primary_key('image_id', 'user_id');
+__PACKAGE__->set_primary_key('image_id', 'person_id');
 __PACKAGE__->belongs_to('image' => 'Schema::Commons::Vote::Result::Image', 'image_id');
-__PACKAGE__->belongs_to('user' => 'Schema::Commons::Vote::Result::User', 'user_id');
+__PACKAGE__->belongs_to('person' => 'Schema::Commons::Vote::Result::Person', 'person_id');
 
 1;
 

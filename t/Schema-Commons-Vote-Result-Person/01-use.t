@@ -7,8 +7,8 @@ use Test::NoWarnings;
 BEGIN {
 
 	# Test.
-	use_ok('Schema::Commons::Vote::Result::User');
+	use_ok('Schema::Commons::Vote::Result::Person');
 }
 
 # Test.
-require_ok('Schema::Commons::Vote::Result::User');
+require_ok('Schema::Commons::Vote::Result::Person');

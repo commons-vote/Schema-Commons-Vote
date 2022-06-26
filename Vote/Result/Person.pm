@@ -1,4 +1,4 @@
-package Schema::Commons::Vote::Result::User;
+package Schema::Commons::Vote::Result::Person;
 
 use base qw(DBIx::Class::Core);
 use strict;
@@ -6,9 +6,9 @@ use warnings;
 
 our $VERSION = 0.01;
 
-__PACKAGE__->table('user');
+__PACKAGE__->table('person');
 __PACKAGE__->add_columns(
-	'user_id' => {
+	'person_id' => {
 		'data_type' => 'integer',
 		'is_auto_increment' => 1,
 	},
@@ -36,9 +36,9 @@ __PACKAGE__->add_columns(
 		'default_value' => 'CURRENT_TIMESTAMP',
 	},
 );
-__PACKAGE__->set_primary_key('user_id');
+__PACKAGE__->set_primary_key('person_id');
 __PACKAGE__->add_unique_constraint(
-	'user_wm_username_unique_key' => ['wm_username'],
+	'person_wm_username_unique_key' => ['wm_username'],
 );
 
 1;

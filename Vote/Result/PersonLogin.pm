@@ -1,4 +1,4 @@
-package Schema::Commons::Vote::Result::UserLogin;
+package Schema::Commons::Vote::Result::PersonLogin;
 
 use base qw(DBIx::Class::Core);
 use strict;
@@ -6,9 +6,9 @@ use warnings;
 
 our $VERSION = 0.01;
 
-__PACKAGE__->table('user_login');
+__PACKAGE__->table('person_login');
 __PACKAGE__->add_columns(
-	'user_id' => {
+	'person_id' => {
 		'data_type' => 'integer',
 	},
 	'login' => {
@@ -29,7 +29,7 @@ __PACKAGE__->add_columns(
 	},
 );
 __PACKAGE__->belongs_to('hash_type' => 'Schema::Commons::Vote::Result::HashType', 'hash_type_id');
-__PACKAGE__->belongs_to('user' => 'Schema::Commons::Vote::Result::User', 'user_id');
+__PACKAGE__->belongs_to('person' => 'Schema::Commons::Vote::Result::Person', 'person_id');
 
 1;
 
