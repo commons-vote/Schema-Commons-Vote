@@ -6,6 +6,7 @@ use warnings;
 
 our $VERSION = 0.01;
 
+__PACKAGE__->load_components('InflateColumn::DateTime');
 __PACKAGE__->table('section_category');
 __PACKAGE__->add_columns(
 	'section_id' => {

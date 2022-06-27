@@ -6,6 +6,7 @@ use warnings;
 
 our $VERSION = 0.01;
 
+__PACKAGE__->load_components('InflateColumn::DateTime');
 __PACKAGE__->table('vote');
 __PACKAGE__->add_columns(
 	'image_id' => {
