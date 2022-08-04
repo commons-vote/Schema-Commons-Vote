@@ -25,6 +25,10 @@ t/Schema-Commons-Vote-Result-Person/01-use.t
 t/Schema-Commons-Vote-Result-Person/02-version.t
 t/Schema-Commons-Vote-Result-PersonLogin/01-use.t
 t/Schema-Commons-Vote-Result-PersonLogin/02-version.t
+t/Schema-Commons-Vote-Result-PersonRole/01-use.t
+t/Schema-Commons-Vote-Result-PersonRole/02-version.t
+t/Schema-Commons-Vote-Result-Role/01-use.t
+t/Schema-Commons-Vote-Result-Role/02-version.t
 t/Schema-Commons-Vote-Result-Section/01-use.t
 t/Schema-Commons-Vote-Result-Section/02-version.t
 t/Schema-Commons-Vote-Result-SectionCategory/01-use.t
@@ -35,6 +39,8 @@ t/Schema-Commons-Vote-Result-Session/01-use.t
 t/Schema-Commons-Vote-Result-Session/02-version.t
 t/Schema-Commons-Vote-Result-Vote/01-use.t
 t/Schema-Commons-Vote-Result-Vote/02-version.t
+t/Schema-Commons-Vote-Result-VoteType/01-use.t
+t/Schema-Commons-Vote-Result-VoteType/02-version.t
 t/Schema-Commons-Vote/01-use.t
 t/Schema-Commons-Vote/02-version.t
 Vote.pm
@@ -43,11 +49,14 @@ Vote/Result/HashType.pm
 Vote/Result/Image.pm
 Vote/Result/Person.pm
 Vote/Result/PersonLogin.pm
+Vote/Result/PersonRole.pm
+Vote/Result/Role.pm
 Vote/Result/Section.pm
 Vote/Result/SectionCategory.pm
 Vote/Result/SectionImage.pm
 Vote/Result/Session.pm
 Vote/Result/Vote.pm
+Vote/Result/VoteType.pm
 xt/Schema-Commons-Vote-Result-Competition/01-pod_coverage.t
 xt/Schema-Commons-Vote-Result-Competition/02-pod.t
 xt/Schema-Commons-Vote-Result-HashType/01-pod_coverage.t
@@ -58,6 +67,10 @@ xt/Schema-Commons-Vote-Result-Person/01-pod_coverage.t
 xt/Schema-Commons-Vote-Result-Person/02-pod.t
 xt/Schema-Commons-Vote-Result-PersonLogin/01-pod_coverage.t
 xt/Schema-Commons-Vote-Result-PersonLogin/02-pod.t
+xt/Schema-Commons-Vote-Result-PersonRole/01-pod_coverage.t
+xt/Schema-Commons-Vote-Result-PersonRole/02-pod.t
+xt/Schema-Commons-Vote-Result-Role/01-pod_coverage.t
+xt/Schema-Commons-Vote-Result-Role/02-pod.t
 xt/Schema-Commons-Vote-Result-Section/01-pod_coverage.t
 xt/Schema-Commons-Vote-Result-Section/02-pod.t
 xt/Schema-Commons-Vote-Result-SectionCategory/01-pod_coverage.t
@@ -72,5 +85,7 @@ xt/Schema-Commons-Vote-Result-UserLogin/01-pod_coverage.t
 xt/Schema-Commons-Vote-Result-UserLogin/02-pod.t
 xt/Schema-Commons-Vote-Result-Vote/01-pod_coverage.t
 xt/Schema-Commons-Vote-Result-Vote/02-pod.t
+xt/Schema-Commons-Vote-Result-VoteType/01-pod_coverage.t
+xt/Schema-Commons-Vote-Result-VoteType/02-pod.t
 xt/Schema-Commons-Vote/01-pod_coverage.t
 xt/Schema-Commons-Vote/02-pod.t
