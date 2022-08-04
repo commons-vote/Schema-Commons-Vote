@@ -20,6 +20,7 @@ __PACKAGE__->add_columns(
 	'description' => {
 		'data_type' => 'text',
 		'size' => 255,
+		'is_nullable' => 1,
 	},
 	'created_at' => {
 		'data_type' => 'datetime',
