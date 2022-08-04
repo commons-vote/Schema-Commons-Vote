@@ -46,6 +46,14 @@ __PACKAGE__->add_columns(
 		'data_type' => 'integer',
 		'is_nullable' => 1,
 	},
+	'jury_voting' => {
+		'data_type' => 'bool',
+		'default_value' => 0,
+	},
+	'jury_max_marking_number' => {
+		'data_type' => 'decimal',
+		'default_value' => 5,
+	},
 	'created_by' => {
 		'data_type' => 'integer',
 	},
