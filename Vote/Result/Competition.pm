@@ -38,6 +38,10 @@ __PACKAGE__->add_columns(
 		'size' => 255,
 		'is_nullable' => 1,
 	},
+	'public_voting' => {
+		'data_type' => 'bool',
+		'default_value' => 0,
+	},
 	'number_of_votes' => {
 		'data_type' => 'integer',
 		'is_nullable' => 1,
