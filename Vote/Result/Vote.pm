@@ -16,6 +16,12 @@ __PACKAGE__->add_columns(
 	'person_id' => {
 		'data_type' => 'integer',
 	},
+	'vote_type_id' => {
+		'data_type' => 'integer',
+	},
+	'vote_value' => {
+		'data_type' => 'decimal',
+	},
 	'created_at' => {
 		'data_type' => 'datetime',
 		'default_value' => 'CURRENT_TIMESTAMP',
@@ -24,6 +30,7 @@ __PACKAGE__->add_columns(
 __PACKAGE__->set_primary_key('image_id', 'person_id');
 __PACKAGE__->belongs_to('image' => 'Schema::Commons::Vote::Result::Image', 'image_id');
 __PACKAGE__->belongs_to('person' => 'Schema::Commons::Vote::Result::Person', 'person_id');
+__PACKAGE__->belongs_to('vote_type' => 'Schema::Commons::Vote::Result::VoteType', 'vote_type_id');
 
 1;
 
