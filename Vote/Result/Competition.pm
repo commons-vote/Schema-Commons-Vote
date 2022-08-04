@@ -28,10 +28,6 @@ __PACKAGE__->add_columns(
 		'size' => 255,
 		'is_nullable' => 1,
 	},
-	'number_of_votes' => {
-		'data_type' => 'integer',
-		'is_nullable' => 1,
-	},
 	'organizer' => {
 		'data_type' => 'text',
 		'size' => 255,
@@ -40,6 +36,10 @@ __PACKAGE__->add_columns(
 	'organizer_logo' => {
 		'data_type' => 'text',
 		'size' => 255,
+		'is_nullable' => 1,
+	},
+	'number_of_votes' => {
+		'data_type' => 'integer',
 		'is_nullable' => 1,
 	},
 	'created_by' => {
