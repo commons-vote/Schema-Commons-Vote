@@ -12,6 +12,9 @@ __PACKAGE__->add_columns(
 	'person_id' => {
 		'data_type' => 'integer',
 	},
+	'competition_id' => {
+		'data_type' => 'integer',
+	},
 	'role_id' => {
 		'data_type' => 'integer',
 	},
@@ -22,6 +25,7 @@ __PACKAGE__->add_columns(
 );
 __PACKAGE__->set_primary_key('person_id', 'role_id');
 __PACKAGE__->belongs_to('person' => 'Schema::Commons::Vote::Result::Person', 'person_id');
+__PACKAGE__->belongs_to('competition' => 'Schema::Commons::Vote::Result::Competition', 'competition_id');
 __PACKAGE__->belongs_to('role' => 'Schema::Commons::Vote::Result::Role', 'role_id');
 
 1;
