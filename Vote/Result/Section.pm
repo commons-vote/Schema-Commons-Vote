@@ -41,6 +41,7 @@ __PACKAGE__->set_primary_key('section_id');
 __PACKAGE__->belongs_to('competition' => 'Schema::Commons::Vote::Result::Competition', 'competition_id');
 __PACKAGE__->belongs_to('person' => 'Schema::Commons::Vote::Result::Person', 'created_by');
 __PACKAGE__->has_many('section_images' => 'Schema::Commons::Vote::Result::SectionImage', 'section_id');
+__PACKAGE__->has_many('section_categories' => 'Schema::Commons::Vote::Result::SectionCategory', 'section_id');
 
 1;
 
