@@ -54,7 +54,7 @@ __PACKAGE__->add_columns(
 		'data_type' => 'decimal',
 		'default_value' => 5,
 	},
-	'created_by' => {
+	'created_by_id' => {
 		'data_type' => 'integer',
 	},
 	'created_at' => {
@@ -63,7 +63,7 @@ __PACKAGE__->add_columns(
 	},
 );
 __PACKAGE__->set_primary_key('competition_id');
-__PACKAGE__->belongs_to('person' => 'Schema::Commons::Vote::Result::Person', 'created_by');
+__PACKAGE__->belongs_to('created_by' => 'Schema::Commons::Vote::Result::Person', 'created_by_id');
 __PACKAGE__->has_many('person_roles' => 'Schema::Commons::Vote::Result::PersonRole', 'competition_id');
 __PACKAGE__->has_many('sections' => 'Schema::Commons::Vote::Result::Section', 'competition_id');
 
