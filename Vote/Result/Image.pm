@@ -39,6 +39,9 @@ __PACKAGE__->add_columns(
 	'height' => {
 		'data_type' => 'integer',
 	},
+	'size' => {
+		'data_type' => 'integer',
+	},
 	'created_by_id' => {
 		'data_type' => 'integer',
 	},
