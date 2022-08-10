@@ -39,7 +39,7 @@ __PACKAGE__->add_columns(
 	'height' => {
 		'data_type' => 'integer',
 	},
-	'created_by' => {
+	'created_by_id' => {
 		'data_type' => 'integer',
 	},
 	'created_at' => {
@@ -51,7 +51,7 @@ __PACKAGE__->set_primary_key('image_id');
 __PACKAGE__->add_unique_constraint(
 	'image_image_unique_key' => ['image'],
 );
-__PACKAGE__->belongs_to('person' => 'Schema::Commons::Vote::Result::Person', 'created_by');
+__PACKAGE__->belongs_to('created_by' => 'Schema::Commons::Vote::Result::Person', 'created_by_id');
 __PACKAGE__->belongs_to('uploader' => 'Schema::Commons::Vote::Result::Person', 'uploader_id');
 __PACKAGE__->has_many('section' => 'Schema::Commons::Vote::Result::SectionImage', 'image_id');
 
