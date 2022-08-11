@@ -9,10 +9,10 @@ our $VERSION = 0.01;
 __PACKAGE__->load_components('InflateColumn::DateTime');
 __PACKAGE__->table('person_role');
 __PACKAGE__->add_columns(
-	'person_id' => {
+	'competition_id' => {
 		'data_type' => 'integer',
 	},
-	'competition_id' => {
+	'person_id' => {
 		'data_type' => 'integer',
 	},
 	'role_id' => {
@@ -23,7 +23,7 @@ __PACKAGE__->add_columns(
 		'default_value' => 'CURRENT_TIMESTAMP',
 	},
 );
-__PACKAGE__->set_primary_key('person_id', 'role_id');
+__PACKAGE__->set_primary_key('competition_id', 'person_id', 'role_id');
 __PACKAGE__->belongs_to('person' => 'Schema::Commons::Vote::Result::Person', 'person_id');
 __PACKAGE__->belongs_to('competition' => 'Schema::Commons::Vote::Result::Competition', 'competition_id');
 __PACKAGE__->belongs_to('role' => 'Schema::Commons::Vote::Result::Role', 'role_id');
