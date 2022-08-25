@@ -19,6 +19,8 @@ perl_version 5.006002;
 readme_from 'Vote.pm';
 recursive_author_tests('xt');
 requires 'DBIx::Class' => 0;
+requires 'File::Share' => 0;
+requires 'Schema::Abstract' => 0;
 resources 'bugtracker' => 'https://github.com/commons-vote/Schema-Commons-Vote/issues';
 resources 'homepage' => 'https://github.com/commons-vote/Schema-Commons-Vote';
 resources 'repository' => 'git://github.com/commons-vote/Schema-Commons-Vote';

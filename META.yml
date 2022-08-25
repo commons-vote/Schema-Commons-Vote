@@ -20,10 +20,13 @@ name: Schema-Commons-Vote
 no_index:
   directory:
     - inc
+    - share
     - t
     - xt
 requires:
   DBIx::Class: 0
+  File::Share: 0
+  Schema::Abstract: 0
   perl: 5.6.2
 resources:
   bugtracker: https://github.com/commons-vote/Schema-Commons-Vote/issues
