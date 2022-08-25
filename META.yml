@@ -24,7 +24,9 @@ no_index:
     - t
     - xt
 requires:
-  DBIx::Class: 0
+  DBIx::Class::Core: 0
+  DBIx::Class::InflateColumn::DateTime: 0
+  DBIx::Class::Schema: 0
   File::Share: 0
   Schema::Abstract: 0
   perl: 5.6.2
