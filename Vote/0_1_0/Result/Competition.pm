@@ -63,9 +63,9 @@ __PACKAGE__->add_columns(
 	},
 );
 __PACKAGE__->set_primary_key('competition_id');
-__PACKAGE__->belongs_to('created_by' => 'Schema::Commons::Vote::Result::Person', 'created_by_id');
-__PACKAGE__->has_many('person_roles' => 'Schema::Commons::Vote::Result::PersonRole', 'competition_id');
-__PACKAGE__->has_many('sections' => 'Schema::Commons::Vote::Result::Section', 'competition_id');
+__PACKAGE__->belongs_to('created_by' => 'Schema::Commons::Vote::0_1_0::Result::Person', 'created_by_id');
+__PACKAGE__->has_many('person_roles' => 'Schema::Commons::Vote::0_1_0::Result::PersonRole', 'competition_id');
+__PACKAGE__->has_many('sections' => 'Schema::Commons::Vote::0_1_0::Result::Section', 'competition_id');
 
 1;
 

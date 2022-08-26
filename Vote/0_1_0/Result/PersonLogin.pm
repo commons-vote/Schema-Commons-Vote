@@ -28,8 +28,8 @@ __PACKAGE__->add_columns(
 		'default_value' => 'CURRENT_TIMESTAMP',
 	},
 );
-__PACKAGE__->belongs_to('hash_type' => 'Schema::Commons::Vote::Result::HashType', 'hash_type_id');
-__PACKAGE__->belongs_to('person' => 'Schema::Commons::Vote::Result::Person', 'person_id');
+__PACKAGE__->belongs_to('hash_type' => 'Schema::Commons::Vote::0_1_0::Result::HashType', 'hash_type_id');
+__PACKAGE__->belongs_to('person' => 'Schema::Commons::Vote::0_1_0::Result::Person', 'person_id');
 
 1;
 

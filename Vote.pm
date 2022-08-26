@@ -8,12 +8,12 @@ use File::Share ':all';
 
 our $VERSION = 0.01;
 
-sub _versions_json_file {
+sub _versions_file {
 	my $self = shift;
 
-	my $versions_json_file = dist_file('Schema-Commons-Vote', 'versions.json');
+	my $versions_file = dist_file('Schema-Commons-Vote', 'versions.txt');
 
-	return $versions_json_file;
+	return $versions_file;
 }
 
 1;

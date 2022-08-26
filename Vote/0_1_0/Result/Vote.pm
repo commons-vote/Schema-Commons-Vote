@@ -28,9 +28,9 @@ __PACKAGE__->add_columns(
 	},
 );
 __PACKAGE__->set_primary_key('image_id', 'person_id', 'vote_type_id');
-__PACKAGE__->belongs_to('image' => 'Schema::Commons::Vote::Result::Image', 'image_id');
-__PACKAGE__->belongs_to('person' => 'Schema::Commons::Vote::Result::Person', 'person_id');
-__PACKAGE__->belongs_to('vote_type' => 'Schema::Commons::Vote::Result::VoteType', 'vote_type_id');
+__PACKAGE__->belongs_to('image' => 'Schema::Commons::Vote::0_1_0::Result::Image', 'image_id');
+__PACKAGE__->belongs_to('person' => 'Schema::Commons::Vote::0_1_0::Result::Person', 'person_id');
+__PACKAGE__->belongs_to('vote_type' => 'Schema::Commons::Vote::0_1_0::Result::VoteType', 'vote_type_id');
 
 1;
 

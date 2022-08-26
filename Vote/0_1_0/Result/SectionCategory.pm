@@ -22,7 +22,7 @@ __PACKAGE__->add_columns(
 	},
 );
 __PACKAGE__->set_primary_key('section_id', 'category');
-__PACKAGE__->belongs_to('section' => 'Schema::Commons::Vote::Result::Section', 'section_id');
+__PACKAGE__->belongs_to('section' => 'Schema::Commons::Vote::0_1_0::Result::Section', 'section_id');
 
 1;
 

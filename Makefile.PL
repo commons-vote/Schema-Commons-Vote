@@ -13,6 +13,7 @@ author_requires 'Test::More' => 0;
 author_requires 'Test::NoWarnings' => 0;
 author_requires 'Test::Pod' => 0;
 author_requires 'Test::Pod::Coverage' => 0;
+install_share 'share';
 license 'bsd';
 name 'Schema-Commons-Vote';
 perl_version 5.006002;

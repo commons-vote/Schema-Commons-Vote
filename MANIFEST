@@ -8,6 +8,7 @@ inc/Module/Install/Fetch.pm
 inc/Module/Install/Makefile.pm
 inc/Module/Install/Metadata.pm
 inc/Module/Install/ReadmeFromPod.pm
+inc/Module/Install/Share.pm
 inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
 LICENSE
@@ -16,6 +17,7 @@ MANIFEST			This list of files
 META.yml
 README
 share/versions.json
+share/versions.txt
 t/Schema-Commons-Vote-0_1_0-Result-Competition/01-use.t
 t/Schema-Commons-Vote-0_1_0-Result-Competition/02-version.t
 t/Schema-Commons-Vote-0_1_0-Result-HashType/01-use.t
