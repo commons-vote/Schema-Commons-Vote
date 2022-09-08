@@ -2,7 +2,8 @@ TDOO
 ====
 1. Create session table.
 Do i need?
-2.
+2. Add created_by_id to all tables.
+3.
 
 Applied
 =======
