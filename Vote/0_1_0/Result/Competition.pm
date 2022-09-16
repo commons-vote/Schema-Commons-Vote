@@ -54,6 +54,10 @@ __PACKAGE__->add_columns(
 		'data_type' => 'decimal',
 		'default_value' => 5,
 	},
+	'images_loaded_at' => {
+		'data_type' => 'datetime',
+		'is_nullable' => 1,
+	},
 	'created_by_id' => {
 		'data_type' => 'integer',
 	},
