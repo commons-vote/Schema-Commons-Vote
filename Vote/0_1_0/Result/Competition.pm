@@ -42,6 +42,12 @@ __PACKAGE__->add_columns(
 		'data_type' => 'bool',
 		'default_value' => 0,
 	},
+	'public_voting_date_from' => {
+		'data_type' => 'datetime',
+	},
+	'public_voting_date_to' => {
+		'data_type' => 'datetime',
+	},
 	'number_of_votes' => {
 		'data_type' => 'integer',
 		'is_nullable' => 1,
@@ -53,6 +59,12 @@ __PACKAGE__->add_columns(
 	'jury_max_marking_number' => {
 		'data_type' => 'decimal',
 		'default_value' => 5,
+	},
+	'jury_voting_date_from' => {
+		'data_type' => 'datetime',
+	},
+	'jury_voting_date_to' => {
+		'data_type' => 'datetime',
 	},
 	'images_loaded_at' => {
 		'data_type' => 'datetime',
