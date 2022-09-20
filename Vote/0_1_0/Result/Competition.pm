@@ -44,9 +44,11 @@ __PACKAGE__->add_columns(
 	},
 	'public_voting_date_from' => {
 		'data_type' => 'datetime',
+		'is_nullable' => 1,
 	},
 	'public_voting_date_to' => {
 		'data_type' => 'datetime',
+		'is_nullable' => 1,
 	},
 	'number_of_votes' => {
 		'data_type' => 'integer',
@@ -62,9 +64,11 @@ __PACKAGE__->add_columns(
 	},
 	'jury_voting_date_from' => {
 		'data_type' => 'datetime',
+		'is_nullable' => 1,
 	},
 	'jury_voting_date_to' => {
 		'data_type' => 'datetime',
+		'is_nullable' => 1,
 	},
 	'images_loaded_at' => {
 		'data_type' => 'datetime',
