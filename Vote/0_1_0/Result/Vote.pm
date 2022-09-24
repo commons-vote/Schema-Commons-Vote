@@ -9,9 +9,11 @@ our $VERSION = 0.01;
 __PACKAGE__->load_components('InflateColumn::DateTime');
 __PACKAGE__->table('vote');
 __PACKAGE__->add_columns(
+	'competition_id' => {
+		'data_type' => 'integer',
+	},
 	'image_id' => {
 		'data_type' => 'integer',
-		'is_auto_increment' => 1,
 	},
 	'person_id' => {
 		'data_type' => 'integer',
@@ -27,7 +29,8 @@ __PACKAGE__->add_columns(
 		'default_value' => 'CURRENT_TIMESTAMP',
 	},
 );
-__PACKAGE__->set_primary_key('image_id', 'person_id', 'vote_type_id');
+__PACKAGE__->set_primary_key('competition_id', 'image_id', 'person_id', 'vote_type_id');
+__PACKAGE__->belongs_to('competition' => 'Schema::Commons::Vote::0_1_0::Result::Competition', 'competition_id');
 __PACKAGE__->belongs_to('image' => 'Schema::Commons::Vote::0_1_0::Result::Image', 'image_id');
 __PACKAGE__->belongs_to('person' => 'Schema::Commons::Vote::0_1_0::Result::Person', 'person_id');
 __PACKAGE__->belongs_to('vote_type' => 'Schema::Commons::Vote::0_1_0::Result::VoteType', 'vote_type_id');
