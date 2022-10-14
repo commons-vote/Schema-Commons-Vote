@@ -24,6 +24,10 @@ t/Schema-Commons-Vote-0_1_0-Result-HashType/01-use.t
 t/Schema-Commons-Vote-0_1_0-Result-HashType/02-version.t
 t/Schema-Commons-Vote-0_1_0-Result-Image/01-use.t
 t/Schema-Commons-Vote-0_1_0-Result-Image/02-version.t
+t/Schema-Commons-Vote-0_1_0-Result-Log/01-use.t
+t/Schema-Commons-Vote-0_1_0-Result-Log/02-version.t
+t/Schema-Commons-Vote-0_1_0-Result-LogType/01-use.t
+t/Schema-Commons-Vote-0_1_0-Result-LogType/02-version.t
 t/Schema-Commons-Vote-0_1_0-Result-Person/01-use.t
 t/Schema-Commons-Vote-0_1_0-Result-Person/02-version.t
 t/Schema-Commons-Vote-0_1_0-Result-PersonLogin/01-use.t
@@ -55,6 +59,8 @@ Vote/0_1_0.pm
 Vote/0_1_0/Result/Competition.pm
 Vote/0_1_0/Result/HashType.pm
 Vote/0_1_0/Result/Image.pm
+Vote/0_1_0/Result/Log.pm
+Vote/0_1_0/Result/LogType.pm
 Vote/0_1_0/Result/Person.pm
 Vote/0_1_0/Result/PersonLogin.pm
 Vote/0_1_0/Result/PersonRole.pm
@@ -72,6 +78,10 @@ xt/Schema-Commons-Vote-0_1_0-Result-HashType/01-pod_coverage.t
 xt/Schema-Commons-Vote-0_1_0-Result-HashType/02-pod.t
 xt/Schema-Commons-Vote-0_1_0-Result-Image/01-pod_coverage.t
 xt/Schema-Commons-Vote-0_1_0-Result-Image/02-pod.t
+xt/Schema-Commons-Vote-0_1_0-Result-Log/01-pod_coverage.t
+xt/Schema-Commons-Vote-0_1_0-Result-Log/02-pod.t
+xt/Schema-Commons-Vote-0_1_0-Result-LogType/01-pod_coverage.t
+xt/Schema-Commons-Vote-0_1_0-Result-LogType/02-pod.t
 xt/Schema-Commons-Vote-0_1_0-Result-Person/01-pod_coverage.t
 xt/Schema-Commons-Vote-0_1_0-Result-Person/02-pod.t
 xt/Schema-Commons-Vote-0_1_0-Result-PersonLogin/01-pod_coverage.t
