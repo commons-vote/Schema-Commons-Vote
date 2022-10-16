@@ -24,6 +24,8 @@ t/Schema-Commons-Vote-0_1_0-Result-HashType/01-use.t
 t/Schema-Commons-Vote-0_1_0-Result-HashType/02-version.t
 t/Schema-Commons-Vote-0_1_0-Result-Image/01-use.t
 t/Schema-Commons-Vote-0_1_0-Result-Image/02-version.t
+t/Schema-Commons-Vote-0_1_0-Result-License/01-use.t
+t/Schema-Commons-Vote-0_1_0-Result-License/02-version.t
 t/Schema-Commons-Vote-0_1_0-Result-Log/01-use.t
 t/Schema-Commons-Vote-0_1_0-Result-Log/02-version.t
 t/Schema-Commons-Vote-0_1_0-Result-LogType/01-use.t
@@ -59,6 +61,7 @@ Vote/0_1_0.pm
 Vote/0_1_0/Result/Competition.pm
 Vote/0_1_0/Result/HashType.pm
 Vote/0_1_0/Result/Image.pm
+Vote/0_1_0/Result/License.pm
 Vote/0_1_0/Result/Log.pm
 Vote/0_1_0/Result/LogType.pm
 Vote/0_1_0/Result/Person.pm
@@ -78,6 +81,8 @@ xt/Schema-Commons-Vote-0_1_0-Result-HashType/01-pod_coverage.t
 xt/Schema-Commons-Vote-0_1_0-Result-HashType/02-pod.t
 xt/Schema-Commons-Vote-0_1_0-Result-Image/01-pod_coverage.t
 xt/Schema-Commons-Vote-0_1_0-Result-Image/02-pod.t
+xt/Schema-Commons-Vote-0_1_0-Result-License/01-pod_coverage.t
+xt/Schema-Commons-Vote-0_1_0-Result-License/02-pod.t
 xt/Schema-Commons-Vote-0_1_0-Result-Log/01-pod_coverage.t
 xt/Schema-Commons-Vote-0_1_0-Result-Log/02-pod.t
 xt/Schema-Commons-Vote-0_1_0-Result-LogType/01-pod_coverage.t
