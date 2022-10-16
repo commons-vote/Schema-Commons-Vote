@@ -45,6 +45,10 @@ __PACKAGE__->add_columns(
 	'size' => {
 		'data_type' => 'integer',
 	},
+	'license' => {
+		'data_type' => 'text',
+		'size' => 100,
+	},
 	'created_by_id' => {
 		'data_type' => 'integer',
 	},
