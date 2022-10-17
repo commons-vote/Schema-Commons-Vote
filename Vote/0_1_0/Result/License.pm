@@ -17,6 +17,10 @@ __PACKAGE__->add_columns(
 		'data_type' => 'text',
 		'size' => 30,
 	},
+	'short_name' => {
+		'data_type' => 'text',
+		'size' => 50,
+	},
 	'text' => {
 		'data_type' => 'text',
 		'size' => 255,
