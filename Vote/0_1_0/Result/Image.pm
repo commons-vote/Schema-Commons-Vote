@@ -45,9 +45,8 @@ __PACKAGE__->add_columns(
 	'size' => {
 		'data_type' => 'integer',
 	},
-	'license' => {
-		'data_type' => 'text',
-		'size' => 100,
+	'license_id' => {
+		'data_type' => 'integer',
 		'is_nullable' => 1,
 	},
 	'created_by_id' => {
@@ -64,6 +63,7 @@ __PACKAGE__->add_unique_constraint(
 );
 __PACKAGE__->belongs_to('created_by' => 'Schema::Commons::Vote::0_1_0::Result::Person', 'created_by_id');
 __PACKAGE__->belongs_to('uploader' => 'Schema::Commons::Vote::0_1_0::Result::Person', 'uploader_id');
+__PACKAGE__->belongs_to('license' => 'Schema::Commons::Vote::0_1_0::Result::License', 'license_id');
 __PACKAGE__->has_many('section' => 'Schema::Commons::Vote::0_1_0::Result::SectionImage', 'image_id');
 
 1;
