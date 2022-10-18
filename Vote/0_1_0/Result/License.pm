@@ -34,6 +34,7 @@ __PACKAGE__->add_columns(
 	},
 );
 __PACKAGE__->set_primary_key('license_id');
+__PACKAGE__->belongs_to('created_by' => 'Schema::Commons::Vote::0_1_0::Result::Person', 'created_by_id');
 
 1;
 
