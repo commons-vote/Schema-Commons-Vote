@@ -46,6 +46,10 @@ t/Schema-Commons-Vote-0_1_0-Result-SectionImage/01-use.t
 t/Schema-Commons-Vote-0_1_0-Result-SectionImage/02-version.t
 t/Schema-Commons-Vote-0_1_0-Result-Session/01-use.t
 t/Schema-Commons-Vote-0_1_0-Result-Session/02-version.t
+t/Schema-Commons-Vote-0_1_0-Result-Theme/01-use.t
+t/Schema-Commons-Vote-0_1_0-Result-Theme/02-version.t
+t/Schema-Commons-Vote-0_1_0-Result-ThemeImage/01-use.t
+t/Schema-Commons-Vote-0_1_0-Result-ThemeImage/02-version.t
 t/Schema-Commons-Vote-0_1_0-Result-ValidationType/01-use.t
 t/Schema-Commons-Vote-0_1_0-Result-ValidationType/02-version.t
 t/Schema-Commons-Vote-0_1_0-Result-Vote/01-use.t
@@ -72,6 +76,8 @@ Vote/0_1_0/Result/Section.pm
 Vote/0_1_0/Result/SectionCategory.pm
 Vote/0_1_0/Result/SectionImage.pm
 Vote/0_1_0/Result/Session.pm
+Vote/0_1_0/Result/Theme.pm
+Vote/0_1_0/Result/ThemeImage.pm
 Vote/0_1_0/Result/ValidationType.pm
 Vote/0_1_0/Result/Vote.pm
 Vote/0_1_0/Result/VoteType.pm
@@ -103,6 +109,10 @@ xt/Schema-Commons-Vote-0_1_0-Result-SectionImage/01-pod_coverage.t
 xt/Schema-Commons-Vote-0_1_0-Result-SectionImage/02-pod.t
 xt/Schema-Commons-Vote-0_1_0-Result-Session/01-pod_coverage.t
 xt/Schema-Commons-Vote-0_1_0-Result-Session/02-pod.t
+xt/Schema-Commons-Vote-0_1_0-Result-Theme/01-pod_coverage.t
+xt/Schema-Commons-Vote-0_1_0-Result-Theme/02-pod.t
+xt/Schema-Commons-Vote-0_1_0-Result-ThemeImage/01-pod_coverage.t
+xt/Schema-Commons-Vote-0_1_0-Result-ThemeImage/02-pod.t
 xt/Schema-Commons-Vote-0_1_0-Result-ValidationType/01-pod_coverage.t
 xt/Schema-Commons-Vote-0_1_0-Result-ValidationType/02-pod.t
 xt/Schema-Commons-Vote-0_1_0-Result-Vote/01-pod_coverage.t
