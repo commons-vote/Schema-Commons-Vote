@@ -74,6 +74,11 @@ __PACKAGE__->add_columns(
 		'data_type' => 'datetime',
 		'is_nullable' => 1,
 	},
+	'wd_qid' => {
+		'data_type' => 'text',
+		'size' => 30,
+		'is_nullable' => 1,
+	},
 	'created_by_id' => {
 		'data_type' => 'integer',
 	},
