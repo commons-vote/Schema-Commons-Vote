@@ -19,6 +19,7 @@ __PACKAGE__->add_columns(
 	},
 	'uploader_id' => {
 		'data_type' => 'integer',
+		'is_nullable' => 1,
 	},
 	'author' => {
 		'data_type' => 'text',
