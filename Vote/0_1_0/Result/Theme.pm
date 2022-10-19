@@ -30,6 +30,9 @@ __PACKAGE__->add_columns(
 	},
 );
 __PACKAGE__->set_primary_key('theme_id');
+__PACKAGE__->add_unique_constraint(
+	'theme_shortcut_unique_key' => ['shortcut'],
+);
 __PACKAGE__->belongs_to('created_by' => 'Schema::Commons::Vote::0_1_0::Result::Person', 'created_by_id');
 __PACKAGE__->has_many('theme_images' => 'Schema::Commons::Vote::0_1_0::Result::ThemeImage', 'theme_id');
 
