@@ -3,7 +3,8 @@ TDOO
 1. Create session table.
 Do i need?
 3. Rename image to commons_name in Image.
-4.
+4. Fix uploader() method in image for uploaded_id = undef.
+5.
 
 Applied
 =======
