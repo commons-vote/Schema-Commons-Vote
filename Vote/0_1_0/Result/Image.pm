@@ -32,6 +32,7 @@ __PACKAGE__->add_columns(
 	},
 	'image_created' => {
 		'data_type' => 'datetime',
+		'is_nullable' => 1,
 	},
 	'image_uploaded' => {
 		'data_type' => 'datetime',
