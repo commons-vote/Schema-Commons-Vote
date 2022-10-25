@@ -20,6 +20,10 @@ share/versions.json
 share/versions.txt
 t/Schema-Commons-Vote-0_1_0-Result-Competition/01-use.t
 t/Schema-Commons-Vote-0_1_0-Result-Competition/02-version.t
+t/Schema-Commons-Vote-0_1_0-Result-CompetitionValidation/01-use.t
+t/Schema-Commons-Vote-0_1_0-Result-CompetitionValidation/02-version.t
+t/Schema-Commons-Vote-0_1_0-Result-CompetitionValidationOption/01-use.t
+t/Schema-Commons-Vote-0_1_0-Result-CompetitionValidationOption/02-version.t
 t/Schema-Commons-Vote-0_1_0-Result-HashType/01-use.t
 t/Schema-Commons-Vote-0_1_0-Result-HashType/02-version.t
 t/Schema-Commons-Vote-0_1_0-Result-Image/01-use.t
@@ -65,6 +69,8 @@ t/Schema-Commons-Vote/02-version.t
 Vote.pm
 Vote/0_1_0.pm
 Vote/0_1_0/Result/Competition.pm
+Vote/0_1_0/Result/CompetitionValidation.pm
+Vote/0_1_0/Result/CompetitionValidationOption.pm
 Vote/0_1_0/Result/HashType.pm
 Vote/0_1_0/Result/Image.pm
 Vote/0_1_0/Result/License.pm
@@ -86,6 +92,10 @@ Vote/0_1_0/Result/Vote.pm
 Vote/0_1_0/Result/VoteType.pm
 xt/Schema-Commons-Vote-0_1_0-Result-Competition/01-pod_coverage.t
 xt/Schema-Commons-Vote-0_1_0-Result-Competition/02-pod.t
+xt/Schema-Commons-Vote-0_1_0-Result-CompetitionValidation/01-pod_coverage.t
+xt/Schema-Commons-Vote-0_1_0-Result-CompetitionValidation/02-pod.t
+xt/Schema-Commons-Vote-0_1_0-Result-CompetitionValidationOption/01-pod_coverage.t
+xt/Schema-Commons-Vote-0_1_0-Result-CompetitionValidationOption/02-pod.t
 xt/Schema-Commons-Vote-0_1_0-Result-HashType/01-pod_coverage.t
 xt/Schema-Commons-Vote-0_1_0-Result-HashType/02-pod.t
 xt/Schema-Commons-Vote-0_1_0-Result-Image/01-pod_coverage.t
