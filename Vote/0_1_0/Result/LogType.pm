@@ -15,7 +15,7 @@ __PACKAGE__->add_columns(
 	},
 	'type' => {
 		'data_type' => 'text',
-		'size' => 30,
+		'size' => 50,
 	},
 	'description' => {
 		'data_type' => 'text',
