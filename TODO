@@ -4,7 +4,9 @@ TDOO
 Do i need?
 3. Rename image to commons_name in Image.
 4. Fix uploader() method in image for uploaded_id = undef.
-5.
+5. Rename role to competition_role.
+6. common role table for application (after 5))
+7.
 
 Applied
 =======
