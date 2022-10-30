@@ -26,7 +26,6 @@ __PACKAGE__->add_columns(
 	'wm_username' => {
 		'data_type' => 'text',
 		'size' => 255,
-		'is_nullable' => 1,
 	},
 	'first_upload_at' => {
 		'data_type' => 'datetime',
