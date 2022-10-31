@@ -6,7 +6,8 @@ Do i need?
 4. Fix uploader() method in image for uploaded_id = undef.
 5. Rename role to competition_role.
 6. common role table for application (after 5))
-7.
+7. Add has_many for competition validation and voting type to Competition.
+8.
 
 Applied
 =======
