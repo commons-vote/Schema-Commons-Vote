@@ -1,4 +1,4 @@
-package Schema::Commons::Vote::0_1_0::Result::VoteType;
+package Schema::Commons::Vote::0_1_0::Result::VotingType;
 
 use base qw(DBIx::Class::Core);
 use strict;
@@ -7,15 +7,15 @@ use warnings;
 our $VERSION = 0.01;
 
 __PACKAGE__->load_components('InflateColumn::DateTime');
-__PACKAGE__->table('vote_type');
+__PACKAGE__->table('voting_type');
 __PACKAGE__->add_columns(
-	'vote_type_id' => {
+	'voting_type_id' => {
 		'data_type' => 'integer',
 		'is_auto_increment' => 1,
 	},
 	'type' => {
 		'data_type' => 'text',
-		'size' => 30,
+		'size' => 50,
 	},
 	'description' => {
 		'data_type' => 'text',
@@ -30,7 +30,7 @@ __PACKAGE__->add_columns(
 		'default_value' => 'CURRENT_TIMESTAMP',
 	},
 );
-__PACKAGE__->set_primary_key('vote_type_id');
+__PACKAGE__->set_primary_key('voting_type_id');
 __PACKAGE__->belongs_to('created_by' => 'Schema::Commons::Vote::0_1_0::Result::Person', 'created_by_id');
 
 1;

@@ -62,8 +62,8 @@ t/Schema-Commons-Vote-0_1_0-Result-ValidationType/01-use.t
 t/Schema-Commons-Vote-0_1_0-Result-ValidationType/02-version.t
 t/Schema-Commons-Vote-0_1_0-Result-Vote/01-use.t
 t/Schema-Commons-Vote-0_1_0-Result-Vote/02-version.t
-t/Schema-Commons-Vote-0_1_0-Result-VoteType/01-use.t
-t/Schema-Commons-Vote-0_1_0-Result-VoteType/02-version.t
+t/Schema-Commons-Vote-0_1_0-Result-VotingType/01-use.t
+t/Schema-Commons-Vote-0_1_0-Result-VotingType/02-version.t
 t/Schema-Commons-Vote-0_1_0/01-use.t
 t/Schema-Commons-Vote-0_1_0/02-version.t
 t/Schema-Commons-Vote/01-use.t
@@ -92,7 +92,7 @@ Vote/0_1_0/Result/ValidationBad.pm
 Vote/0_1_0/Result/ValidationOption.pm
 Vote/0_1_0/Result/ValidationType.pm
 Vote/0_1_0/Result/Vote.pm
-Vote/0_1_0/Result/VoteType.pm
+Vote/0_1_0/Result/VotingType.pm
 xt/Schema-Commons-Vote-0_1_0-Result-Competition/01-pod_coverage.t
 xt/Schema-Commons-Vote-0_1_0-Result-Competition/02-pod.t
 xt/Schema-Commons-Vote-0_1_0-Result-CompetitionValidation/01-pod_coverage.t
@@ -137,8 +137,8 @@ xt/Schema-Commons-Vote-0_1_0-Result-ValidationType/01-pod_coverage.t
 xt/Schema-Commons-Vote-0_1_0-Result-ValidationType/02-pod.t
 xt/Schema-Commons-Vote-0_1_0-Result-Vote/01-pod_coverage.t
 xt/Schema-Commons-Vote-0_1_0-Result-Vote/02-pod.t
-xt/Schema-Commons-Vote-0_1_0-Result-VoteType/01-pod_coverage.t
-xt/Schema-Commons-Vote-0_1_0-Result-VoteType/02-pod.t
+xt/Schema-Commons-Vote-0_1_0-Result-VotingType/01-pod_coverage.t
+xt/Schema-Commons-Vote-0_1_0-Result-VotingType/02-pod.t
 xt/Schema-Commons-Vote-0_1_0/01-pod_coverage.t
 xt/Schema-Commons-Vote-0_1_0/02-pod.t
 xt/Schema-Commons-Vote/01-pod_coverage.t
