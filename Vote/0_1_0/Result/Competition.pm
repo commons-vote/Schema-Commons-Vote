@@ -17,12 +17,6 @@ __PACKAGE__->add_columns(
 		'data_type' => 'text',
 		'size' => 255,
 	},
-	'date_from' => {
-		'data_type' => 'datetime',
-	},
-	'date_to' => {
-		'data_type' => 'datetime',
-	},
 	'logo' => {
 		'data_type' => 'text',
 		'size' => 255,
@@ -36,38 +30,6 @@ __PACKAGE__->add_columns(
 	'organizer_logo' => {
 		'data_type' => 'text',
 		'size' => 255,
-		'is_nullable' => 1,
-	},
-	'public_voting' => {
-		'data_type' => 'bool',
-		'default_value' => 0,
-	},
-	'public_voting_date_from' => {
-		'data_type' => 'datetime',
-		'is_nullable' => 1,
-	},
-	'public_voting_date_to' => {
-		'data_type' => 'datetime',
-		'is_nullable' => 1,
-	},
-	'number_of_votes' => {
-		'data_type' => 'integer',
-		'is_nullable' => 1,
-	},
-	'jury_voting' => {
-		'data_type' => 'bool',
-		'default_value' => 0,
-	},
-	'jury_max_marking_number' => {
-		'data_type' => 'decimal',
-		'default_value' => 5,
-	},
-	'jury_voting_date_from' => {
-		'data_type' => 'datetime',
-		'is_nullable' => 1,
-	},
-	'jury_voting_date_to' => {
-		'data_type' => 'datetime',
 		'is_nullable' => 1,
 	},
 	'images_loaded_at' => {
