@@ -18,6 +18,9 @@ __PACKAGE__->add_columns(
 	'validation_type_id' => {
 		'data_type' => 'integer',
 	},
+	'section_id' => {
+		'data_type' => 'integer',
+	},
 	'created_by_id' => {
 		'data_type' => 'integer',
 	},
@@ -27,11 +30,12 @@ __PACKAGE__->add_columns(
 	},
 );
 __PACKAGE__->add_unique_constraint(
-	'validation_bad_unique_key' => ['competition_id', 'image_id', 'validation_type_id'],
+	'validation_bad_unique_key' => ['competition_id', 'image_id', 'validation_type_id', 'section_id'],
 );
 __PACKAGE__->belongs_to('competition' => 'Schema::Commons::Vote::0_1_0::Result::Competition', 'competition_id');
 __PACKAGE__->belongs_to('created_by' => 'Schema::Commons::Vote::0_1_0::Result::Person', 'created_by_id');
 __PACKAGE__->belongs_to('image' => 'Schema::Commons::Vote::0_1_0::Result::Image', 'image_id');
+__PACKAGE__->belongs_to('section' => 'Schema::Commons::Vote::0_1_0::Result::Section', 'section_id');
 __PACKAGE__->belongs_to('validation_type' => 'Schema::Commons::Vote::0_1_0::Result::ValidationType', 'validation_type_id');
 
 1;
